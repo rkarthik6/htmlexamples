@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript in Body</h2>
+
+<p id="demo"></p>
+
+<script>
+const student = {
+  firstName: "Testing",
+  lastName : "fsdfsdfsdf",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+console.log(student.fullName());
+alert(student["lastName"])
+</script>
+</body>
+</html>

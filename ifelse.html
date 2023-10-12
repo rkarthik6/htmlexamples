@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript in Body</h2>
+
+<p id="demo"></p>
+
+<script>
+    var hour = 15
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("demo").innerHTML = greeting;
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
+console.log(day)
+var text = 0;
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+console.log(text)
+
+const student = {firstname:"Sathish", lastname:"Test ", age:13};
+
+
+let test = "";
+for (let x in student) {
+  console.log(x)
+  console.log(student[x])
+    test += student[x];
+}
+console.log(test)
+
+const items = [1, 2, 3, 4]
+for (item of items) {
+  console.log(item)
+}
+</script>
+
+</body>
+</html>
